@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	background: #2c3e50;
+	animation-name: color;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+
+}
+
+.sol{
+	background: #2ecc71;
+	height: 600px;
+	width: 100%;
+	margin-top: 205px;
+	position: absolute;
+}
+
+.soleil{
+	background: #f1c40f;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	animation-name: animSun;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite; 
+
+}
+
+
+@keyframes animSun{
+	0%{
+		transform: translate(-200px,3000px);
+		background: #d35400;
+	}
+	25%{
+		transform: translate(50px,100px);
+		
+	}
+	50%{
+		transform: translate(560px,-100px);
+		background: #f1c40f;
+	}
+	75%{
+		transform: translate(1390px,100px);
+		
+	}
+	93%{
+		background: #e74c3c;
+	}
+	100%{
+		transform: translate(1700px,300px);	
+	}
+}
+
+
+
+@keyframes color{
+	0%{
+		background: #2c3e50;
+	}
+	10%{
+		background: pink;
+	}
+	30%{
+		background: #3498db;
+	}
+	50%{
+		background: #3498db;
+	}
+	55%{
+		background: pink;
+	}
+	70%{
+		background: #2c3e50;
+	}
+
+}
